@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -61,7 +62,7 @@ public class FormConfig {
 	public void setFile() {
 		if (!new File(Gbot.getJarFolder() + "form.json").exists()) {
 			try {
-				Files.copy(getClass().getResourceAsStream("form.json"), Path.of(Gbot.getJarFolder() + "form.json"));
+				Files.copy(getClass().getResourceAsStream("form.json"), Paths.get(Gbot.getJarFolder() + "form.json"));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
