@@ -1,0 +1,238 @@
+{
+	"form": [
+		 {
+		 	"id": "1",
+		 	"text": "**Dans quelle classe est-tu ?**",
+			"reponseType": "reaction",
+		 	"reactions": [
+		 		{
+		 			"reactionID": "1",
+		 			"emote": "1️⃣",
+		 			"name": "1"
+		 		},
+				{
+		 			"reactionID": "2",
+		 			"emote": "2️⃣",
+		 			"name": "2"
+		 		},
+				{
+		 			"reactionID": "3",
+		 			"emote": "3️⃣",
+		 			"name": "3"
+		 		},
+				{
+		 			"reactionID": "4",
+		 			"emote": "4️⃣",
+		 			"name": "4"
+		 		},
+				{
+		 			"reactionID": "5",
+		 			"emote": "5️⃣",
+		 			"name": "5"
+		 		},
+				{
+		 			"reactionID": "6",
+		 			"emote": "6️⃣",
+		 			"name": "6"
+		 		},
+				{
+		 			"reactionID": "7",
+		 			"emote": "7️⃣",
+		 			"name": "7"
+		 		}
+		 	]
+		 },
+		{
+		 	"id": "2",
+		 	"text": "**Quelle est ta première spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻)```",
+			"reponseType": "reaction",
+		 	"reactions": [
+		 		{
+		 			"reactionID": "1",
+		 			"emote": "🧮",
+		 			"name": "maths"
+		 		},
+				{
+		 			"reactionID": "2",
+		 			"emote": "🌌",
+		 			"name": "physique"
+		 		},
+				{
+		 			"reactionID": "3",
+		 			"emote": "🌱",
+		 			"name": "svt"
+		 		},
+				{
+		 			"reactionID": "4",
+		 			"emote": "💱",
+		 			"name": "ses"
+		 		},
+				{
+		 			"reactionID": "5",
+		 			"emote": "🌍",
+		 			"name": "hggssp"
+		 		},
+				{
+		 			"reactionID": "6",
+		 			"emote": "📘",
+		 			"name": "llce"
+		 		},
+				{
+		 			"reactionID": "7",
+		 			"emote": "📗",
+		 			"name": "llca"
+		 		},
+				{
+		 			"reactionID": "8",
+		 			"emote": "💻",
+		 			"name": "nsi"
+		 		},
+				{
+		 			"reactionID": "9",
+		 			"emote": "🕺🏻",
+		 			"name": "dance"
+		 		}
+		 	]
+		 },
+		{
+		 	"id": "3",
+		 	"text": "**Peux-tu me donner le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)**",
+			"reponseType": "text",
+		 	"reactions": []
+		 },
+		{
+		 	"id": "4",
+		 	"text": "**Quelle est ta deuxième spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻)```",
+			"reponseType": "reaction",
+		 	"reactions": [
+		 		{
+		 			"reactionID": "1",
+		 			"emote": "🧮",
+		 			"name": "maths"
+		 		},
+				{
+		 			"reactionID": "2",
+		 			"emote": "🌌",
+		 			"name": "physique"
+		 		},
+				{
+		 			"reactionID": "3",
+		 			"emote": "🌱",
+		 			"name": "svt"
+		 		},
+				{
+		 			"reactionID": "4",
+		 			"emote": "💱",
+		 			"name": "ses"
+		 		},
+				{
+		 			"reactionID": "5",
+		 			"emote": "🌍",
+		 			"name": "hggssp"
+		 		},
+				{
+		 			"reactionID": "6",
+		 			"emote": "📘",
+		 			"name": "llce"
+		 		},
+				{
+		 			"reactionID": "7",
+		 			"emote": "📗",
+		 			"name": "llca"
+		 		},
+				{
+		 			"reactionID": "8",
+		 			"emote": "💻",
+		 			"name": "nsi"
+		 		},
+				{
+		 			"reactionID": "9",
+		 			"emote": "🕺🏻",
+		 			"name": "dance"
+		 		}
+		 	]
+		 },
+		{
+		 	"id": "5",
+		 	"text": "**Peux-tu me donner le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)**",
+			"reponseType": "text",
+		 	"reactions": []
+		 },
+		{
+		 	"id": "6",
+		 	"text": "**Quelle est ta troisième spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻)```",
+			"reponseType": "reaction",
+		 	"reactions": [
+		 		{
+		 			"reactionID": "1",
+		 			"emote": "🧮",
+		 			"name": "maths"
+		 		},
+				{
+		 			"reactionID": "2",
+		 			"emote": "🌌",
+		 			"name": "physique"
+		 		},
+				{
+		 			"reactionID": "3",
+		 			"emote": "🌱",
+		 			"name": "svt"
+		 		},
+				{
+		 			"reactionID": "4",
+		 			"emote": "💱",
+		 			"name": "ses"
+		 		},
+				{
+		 			"reactionID": "5",
+		 			"emote": "🌍",
+		 			"name": "hggssp"
+		 		},
+				{
+		 			"reactionID": "6",
+		 			"emote": "📘",
+		 			"name": "llce"
+		 		},
+				{
+		 			"reactionID": "7",
+		 			"emote": "📗",
+		 			"name": "llca"
+		 		},
+				{
+		 			"reactionID": "8",
+		 			"emote": "💻",
+		 			"name": "nsi"
+		 		},
+				{
+		 			"reactionID": "9",
+		 			"emote": "🕺🏻",
+		 			"name": "dance"
+		 		}
+		 	]
+		 },
+		{
+		 	"id": "7",
+		 	"text": "**Peux-tu me donner le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)**",
+			"reponseType": "text",
+		 	"reactions": []
+		 },
+		{
+		 	"id": "8",
+		 	"text": "**Peux-tu me donner ton prénom ?**",
+			"reponseType": "text",
+		 	"reactions": []
+		 },
+		{
+		 	"id": "9",
+		 	"text": "**Peux-tu me donner ton nom ?**",
+			"reponseType": "text",
+		 	"reactions": []
+		 },
+		{
+		 	"id": "10",
+		 	"text": "**Peux-tu me donner ta date de naissance ? (jour/mois/année)**",
+			"reponseType": "text",
+		 	"reactions": []
+		 }
+	]
+}
