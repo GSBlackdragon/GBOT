@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 import fr.blackdragon.gbot.Gbot;
+import fr.blackdragon.gbot.form.data.DataManager;
+import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.events.message.priv.PrivateMessageReceivedEvent;
 import net.dv8tion.jda.api.events.message.react.MessageReactionAddEvent;
@@ -16,8 +19,8 @@ public class FormManager extends ListenerAdapter {
 	private Map<Integer, String> formMap = new HashMap<Integer, String>();
 
 	public FormManager(User user) {
-		this.user = user; 
-		
+		this.user = user;
+
 		Gbot.getJDA().addEventListener(this);
 		user.openPrivateChannel().queue(privateChannel -> {
 			privateChannel
@@ -63,13 +66,48 @@ public class FormManager extends ListenerAdapter {
 	}
 
 	public void checkFinish() {
-		if (this.formIndex == (FormConfig.forms.values().size()+1)) {
-			Gbot.getJDA().removeEventListener(this);
-			this.user.openPrivateChannel().queue(privateChannel -> {
-				privateChannel.sendMessage(
-						"**Merci d'avoir rempli le formulaire, tu as désormais accès a tout les channels te correspondants !**")
-						.queue();
-			});
+		if (this.formIndex == (FormConfig.forms.values().size() + 1)) {
+			Member member = Gbot.getJDA().getGuilds().get(0).getMember(this.user);
+
+			if (DataManager.validRegister(formMap.get(8), formMap.get(9), formMap.get(10), formMap.get(1),
+					formMap.get(2), formMap.get(3), formMap.get(4), formMap.get(5), formMap.get(6), formMap.get(7))) {
+				Gbot.getJDA().removeEventListener(this);
+				this.user.openPrivateChannel().queue(privateChannel -> {
+					privateChannel.sendMessage(
+							"**Merci d'avoir rempli le formulaire, tu as désormais accès a tout les channels te correspondants !**")
+							.queue();
+				});
+
+				member.modifyNickname(formMap.get(8) + " " + formMap.get(9).substring(0, 1)).queue();
+
+				for (Role role : member.getGuild().getRoles()) {
+					if (role.getName().contains(formMap.get(2))) {
+						if (role.getName().equalsIgnoreCase(formMap.get(2))) {
+							member.getGuild().addRoleToMember(member, role).queue();
+						} else if (role.getName().equalsIgnoreCase(formMap.get(2) + formMap.get(3))) {
+							member.getGuild().addRoleToMember(member, role).queue();
+						}
+					} else if (role.getName().contains(formMap.get(4))) {
+						if (role.getName().equalsIgnoreCase(formMap.get(4))) {
+							member.getGuild().addRoleToMember(member, role).queue();
+						} else if (role.getName().equalsIgnoreCase(formMap.get(4) + formMap.get(5))) {
+							member.getGuild().addRoleToMember(member, role).queue();
+						}
+					} else if (role.getName().contains(formMap.get(6))) {
+						if (role.getName().equalsIgnoreCase(formMap.get(6))) {
+							member.getGuild().addRoleToMember(member, role).queue();
+						} else if (role.getName().equalsIgnoreCase(formMap.get(6) + formMap.get(7))) {
+							member.getGuild().addRoleToMember(member, role).queue();
+						}
+					} else if (role.getName().equals("1G" + formMap.get(1))) {
+						member.getGuild().addRoleToMember(member, role).queue();
+					} else if (role.getId().equals("688075891796213943")) {
+						member.getGuild().addRoleToMember(member, role).queue();
+					} else if (role.getId().equals("689067499962368041")) {
+						member.getGuild().addRoleToMember(member, role).queue();
+					}
+				}
+			}
 		} else {
 			sendQuestion();
 		}

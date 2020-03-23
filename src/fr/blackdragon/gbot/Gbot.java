@@ -3,7 +3,6 @@ package fr.blackdragon.gbot;
 import javax.security.auth.login.LoginException;
 
 import fr.blackdragon.gbot.database.DatabaseManager;
-import fr.blackdragon.gbot.database.Query;
 import fr.blackdragon.gbot.events.UserJoinEvent;
 import fr.blackdragon.gbot.form.FormConfig;
 import net.dv8tion.jda.api.*;
@@ -34,7 +33,6 @@ public class Gbot {
 		databaseManager.open();
 
 		new FormConfig();
-		Query.registerUser("Nathan", "Ferry", "23/10/2003", 2, "maths1", "pc4", "nsi1");
 	}
 
 	public static JDA getJDA() {
