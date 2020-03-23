@@ -2,6 +2,8 @@ package fr.blackdragon.gbot.database;
 
 import java.sql.PreparedStatement;
 
+import fr.blackdragon.gbot.Gbot;
+
 public class Query {
 
 	public static void registerUser(String prenom, String nom, String date, int classe, String spe1, String spe2, String spe3) {
@@ -10,7 +12,7 @@ public class Query {
 		PreparedStatement statement;
 
 		try {
-			statement = null;
+			statement = Gbot.getDatabase().getConnection().prepareStatement(request);
 			statement.setString(1, prenom);
 			statement.setString(2, nom);
 			statement.setString(3, date);
