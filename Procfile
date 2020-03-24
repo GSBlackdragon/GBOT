@@ -1,0 +1,1 @@
+worker: java -jar target/GBOT.jar Njg5MDcwMzMyNjczMzkyNjUw.Xnkwlw.w6_skGTEOzAf_MLpZdZrcgIf2LI jdbc:mysql://mysql-clemcailly.alwaysdata.net/clemcailly_1gbot 175283_1gbot 1gbotroot
