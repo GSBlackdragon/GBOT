@@ -61,6 +61,7 @@ public class FormConfig {
 	public void setFile() {
 		if (!new File(Gbot.getJarFolder() + "form.json").exists()) {
 			try {
+				System.out.println(Paths.get(Gbot.getJarFolder() + "form.json"));
 				Files.copy(getClass().getResourceAsStream("form.json"), Paths.get(Gbot.getJarFolder() + "form.json"));
 			} catch (IOException e) {
 				e.printStackTrace();
