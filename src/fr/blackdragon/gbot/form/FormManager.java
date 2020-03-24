@@ -21,7 +21,7 @@ public class FormManager extends ListenerAdapter {
 	public static Map<User, FormManager> formManagers = new HashMap<User, FormManager>();
 
 	public FormManager(User user) {
-		if (formManagers.containsKey(user)) {
+		if (!formManagers.containsKey(user)) {
 			this.user = user;
 			formManagers.put(user, this);
 
