@@ -12,7 +12,7 @@ public class Gbot {
 
 	private static JDA jda = null;
 	public static String prefix = "%";
-	private static String jarFolder = Gbot.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+	private static String jarFolder = Gbot.class.getProtectionDomain().getCodeSource().getLocation().getPath().replace("GBOT.jar", "");
 	private static DatabaseManager databaseManager;
 
 	public static void main(String[] args) throws LoginException {
