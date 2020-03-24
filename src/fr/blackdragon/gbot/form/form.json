@@ -96,7 +96,7 @@
 		 },
 		{
 		 	"id": "3",
-		 	"text": "**Peux-tu me donner le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)**",
+		 	"text": "**Peux-tu m'écrire le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)**",
 			"reponseType": "text",
 		 	"reactions": []
 		 },
@@ -154,7 +154,7 @@
 		 },
 		{
 		 	"id": "5",
-		 	"text": "**Peux-tu me donner le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)**",
+		 	"text": "**Peux-tu m'écrire le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)**",
 			"reponseType": "text",
 		 	"reactions": []
 		 },
@@ -212,25 +212,25 @@
 		 },
 		{
 		 	"id": "7",
-		 	"text": "**Peux-tu me donner le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)**",
+		 	"text": "**Peux-tu m'écrire le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)**",
 			"reponseType": "text",
 		 	"reactions": []
 		 },
 		{
 		 	"id": "8",
-		 	"text": "**Peux-tu me donner ton prénom ?**",
+		 	"text": "**Peux-tu m'écrire ton prénom ?**",
 			"reponseType": "text",
 		 	"reactions": []
 		 },
 		{
 		 	"id": "9",
-		 	"text": "**Peux-tu me donner ton nom ?**",
+		 	"text": "**Peux-tu m'écrire ton nom ?**",
 			"reponseType": "text",
 		 	"reactions": []
 		 },
 		{
 		 	"id": "10",
-		 	"text": "**Peux-tu me donner ta date de naissance ? (jour/mois/année)**",
+		 	"text": "**Peux-tu m'écrire ta date de naissance ? (jour/mois/année)**",
 			"reponseType": "text",
 		 	"reactions": []
 		 }
