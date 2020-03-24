@@ -18,18 +18,22 @@ public class FormManager extends ListenerAdapter {
 	private int formIndex = 1;
 	private Map<Integer, String> formMap = new HashMap<Integer, String>();
 
+	public static Map<User, FormManager> formManagers = new HashMap<User, FormManager>();
+
 	public FormManager(User user) {
-		this.user = user;
+		if (formManagers.containsKey(user)) {
+			this.user = user;
+			formManagers.put(user, this);
 
-		Gbot.getJDA().addEventListener(this);
-		user.openPrivateChannel().queue(privateChannel -> {
-			privateChannel
-					.sendMessage(
-							"**Bienvenue sur le serveur Discord dédié aux premières du Lycée Guillaume le Conquérant**")
-					.queue();
-		});
+			Gbot.getJDA().addEventListener(this);
+			user.openPrivateChannel().queue(privateChannel -> {
+				privateChannel.sendMessage(
+						"**Bienvenue sur le serveur Discord dédié aux premières du Lycée Guillaume le Conquérant**")
+						.queue();
+			});
 
-		sendQuestion();
+			sendQuestion();
+		}
 	}
 
 	@Override
@@ -72,6 +76,7 @@ public class FormManager extends ListenerAdapter {
 			if (DataManager.validRegister(formMap.get(8), formMap.get(9), formMap.get(10), formMap.get(1),
 					formMap.get(2), formMap.get(3), formMap.get(4), formMap.get(5), formMap.get(6), formMap.get(7))) {
 				Gbot.getJDA().removeEventListener(this);
+				formManagers.remove(this.user);
 				this.user.openPrivateChannel().queue(privateChannel -> {
 					privateChannel.sendMessage(
 							"**Merci d'avoir rempli le formulaire, tu as désormais accès à tous les channels te correspondants !**")
@@ -107,6 +112,15 @@ public class FormManager extends ListenerAdapter {
 						member.getGuild().addRoleToMember(member, role).queue();
 					}
 				}
+			} else {
+				this.user.openPrivateChannel().queue(privateChannel -> {
+					privateChannel.sendMessage(
+							"**Il y a un problème dans ton formulaire, merci de bien vouloir recommencer et de répondre au plus simplement aux questions qui te sont demandées :)**")
+							.queue(message -> {
+								this.formIndex = 1;
+								sendQuestion();
+							});
+				});
 			}
 		} else {
 			sendQuestion();
