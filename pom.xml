@@ -48,7 +48,7 @@
                   <archive>
                     <manifest>
                     <addClasspath>true</addClasspath>
-                    <mainClass>com.mkyong.core.utils.App</mainClass>
+                    <mainClass>fr.blackdragon.gbot.Gbot</mainClass>
                     <classpathPrefix>dependency-jars/</classpathPrefix>
                     </manifest>
                   </archive>
