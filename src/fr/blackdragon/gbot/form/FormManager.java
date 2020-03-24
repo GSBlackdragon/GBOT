@@ -74,7 +74,7 @@ public class FormManager extends ListenerAdapter {
 			Member member = Gbot.getJDA().getGuilds().get(0).getMember(this.user);
 
 			if (DataManager.validRegister(formMap.get(8), formMap.get(9), formMap.get(10), formMap.get(1),
-					formMap.get(2), formMap.get(3), formMap.get(4), formMap.get(5), formMap.get(6), formMap.get(7))) {
+					formMap.get(2), formMap.get(3), formMap.get(4), formMap.get(5), formMap.get(6), formMap.get(7), this.user)) {
 				Gbot.getJDA().removeEventListener(this);
 				formManagers.remove(this.user);
 				this.user.openPrivateChannel().queue(privateChannel -> {
