@@ -74,7 +74,7 @@ public class FormManager extends ListenerAdapter {
 				Gbot.getJDA().removeEventListener(this);
 				this.user.openPrivateChannel().queue(privateChannel -> {
 					privateChannel.sendMessage(
-							"**Merci d'avoir rempli le formulaire, tu as désormais accès a tout les channels te correspondants !**")
+							"**Merci d'avoir rempli le formulaire, tu as désormais accès à tous les channels te correspondants !**")
 							.queue();
 				});
 
