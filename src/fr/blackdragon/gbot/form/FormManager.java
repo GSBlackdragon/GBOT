@@ -5,6 +5,7 @@ import java.util.Map;
 
 import fr.blackdragon.gbot.Gbot;
 import fr.blackdragon.gbot.form.data.DataManager;
+import net.dv8tion.jda.api.entities.ChannelType;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.entities.User;
@@ -21,7 +22,7 @@ public class FormManager extends ListenerAdapter {
 	public static Map<User, FormManager> formManagers = new HashMap<User, FormManager>();
 
 	public FormManager(User user) {
-		if (formManagers.containsKey(user)) {
+		if (!formManagers.containsKey(user)) {
 			this.user = user;
 			formManagers.put(user, this);
 
@@ -38,6 +39,8 @@ public class FormManager extends ListenerAdapter {
 
 	@Override
 	public void onPrivateMessageReceived(PrivateMessageReceivedEvent event) {
+		if (event.getChannel().getType() != ChannelType.PRIVATE) { return;}
+		
 		if (event.getAuthor() == this.user) {
 			if (FormConfig.forms.get(this.formIndex).getType() == FormType.text) {
 				formMap.put(this.formIndex, event.getMessage().getContentDisplay());
@@ -49,6 +52,8 @@ public class FormManager extends ListenerAdapter {
 
 	@Override
 	public void onMessageReactionAdd(MessageReactionAddEvent event) {
+		if (event.getChannelType() != ChannelType.PRIVATE) { return;}
+		
 		if (event.getUser() == this.user) {
 			if (FormConfig.forms.get(this.formIndex).getType() == FormType.reaction) {
 				formMap.put(this.formIndex,
