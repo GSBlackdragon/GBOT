@@ -77,9 +77,9 @@
 		</plugins>
 		<resources>
 			<resource>
-				<directory>fr/blackdragon/gbot/form</directory>
+				<directory>src/fr/blackdragon/gbot/form</directory>
 				<includes>
-					<include>**/*.json</include>
+					<include>fr/blackdragon/gbot/form/*.json</include>
 				</includes>
 			</resource>
 		</resources>
