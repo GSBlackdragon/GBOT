@@ -3,6 +3,7 @@ package fr.blackdragon.gbot;
 import javax.security.auth.login.LoginException;
 
 import fr.blackdragon.gbot.database.DatabaseManager;
+import fr.blackdragon.gbot.events.ReactionAddEvent;
 import fr.blackdragon.gbot.events.UserJoinEvent;
 import fr.blackdragon.gbot.form.FormConfig;
 import net.dv8tion.jda.api.*;
@@ -21,6 +22,7 @@ public class Gbot {
 				.build();
 
 		jda.addEventListener(new UserJoinEvent());
+		jda.addEventListener(new ReactionAddEvent());
 
 		try {
 			jda.awaitReady();
