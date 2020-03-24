@@ -12,84 +12,84 @@
 		 		},
 				{
 		 			"reactionID": "2",
-		 			"emote": "2️⃣",
+		 			"emote": "U+0032U+FE0FU+20E3",
 		 			"name": "2"
 		 		},
 				{
 		 			"reactionID": "3",
-		 			"emote": "3️⃣",
+		 			"emote": "U+0033U+FE0FU+20E3",
 		 			"name": "3"
 		 		},
 				{
 		 			"reactionID": "4",
-		 			"emote": "4️⃣",
+		 			"emote": "U+0034U+FE0FU+20E3",
 		 			"name": "4"
 		 		},
 				{
 		 			"reactionID": "5",
-		 			"emote": "5️⃣",
+		 			"emote": "U+0035U+FE0FU+20E3",
 		 			"name": "5"
 		 		},
 				{
 		 			"reactionID": "6",
-		 			"emote": "6️⃣",
+		 			"emote": "U+0036U+FE0FU+20E3",
 		 			"name": "6"
 		 		},
 				{
 		 			"reactionID": "7",
-		 			"emote": "7️⃣",
+		 			"emote": "U+0037U+FE0FU+20E3",
 		 			"name": "7"
 		 		}
 		 	]
 		 },
 		{
 		 	"id": "2",
-		 	"text": "**Quelle est ta première spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻)```",
+		 	"text": "**Quelle est ta première spécialité ?** ```\n -mathématiques (U+1F9EE) \n -physique-chimie (U+1F30C) \n -sciences et vie de la Terre (U+1F331) \n -sciences économiques et sociales (U+1F4B1) \n -histoire géographie, géopolitique et sciences politiques (U+1F30D) \n -langues, littératures et cultures étrangères (U+1F4D8) \n -langues, littératures et cultures de l'antiquité (U+1F4D7) \n -numériques et sciences de l'informatique (U+1F4BB) \n -danse (U+1F57A)```",
 			"reponseType": "reaction",
 		 	"reactions": [
 		 		{
 		 			"reactionID": "1",
-		 			"emote": "🧮",
+		 			"emote": "U+1F9EE",
 		 			"name": "maths"
 		 		},
 				{
 		 			"reactionID": "2",
-		 			"emote": "🌌",
+		 			"emote": "U+1F30C",
 		 			"name": "pc"
 		 		},
 				{
 		 			"reactionID": "3",
-		 			"emote": "🌱",
+		 			"emote": "U+1F331",
 		 			"name": "svt"
 		 		},
 				{
 		 			"reactionID": "4",
-		 			"emote": "💱",
+		 			"emote": "U+1F4B1",
 		 			"name": "ses"
 		 		},
 				{
 		 			"reactionID": "5",
-		 			"emote": "🌍",
+		 			"emote": "U+1F30D",
 		 			"name": "hggssp"
 		 		},
 				{
 		 			"reactionID": "6",
-		 			"emote": "📘",
+		 			"emote": "U+1F4D8",
 		 			"name": "llce"
 		 		},
 				{
 		 			"reactionID": "7",
-		 			"emote": "📗",
+		 			"emote": "U+1F4D7",
 		 			"name": "llca"
 		 		},
 				{
 		 			"reactionID": "8",
-		 			"emote": "💻",
+		 			"emote": "U+1F4BB",
 		 			"name": "nsi"
 		 		},
 				{
 		 			"reactionID": "9",
-		 			"emote": "🕺🏻",
+		 			"emote": "U+1F57A",
 		 			"name": "dance"
 		 		}
 		 	]
@@ -102,52 +102,52 @@
 		 },
 		{
 		 	"id": "4",
-		 	"text": "**Quelle est ta deuxième spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻)```",
+		 	"text": "**Quelle est ta deuxième spécialité ?** ```\n -mathématiques (U+1F9EE) \n -physique-chimie (U+1F30C) \n -sciences et vie de la Terre (U+1F331) \n -sciences économiques et sociales (U+1F4B1) \n -histoire géographie, géopolitique et sciences politiques (U+1F30D) \n -langues, littératures et cultures étrangères (U+1F4D8) \n -langues, littératures et cultures de l'antiquité (U+1F4D7) \n -numériques et sciences de l'informatique (U+1F4BB) \n -danse (U+1F57A)```",
 			"reponseType": "reaction",
 		 	"reactions": [
 		 		{
 		 			"reactionID": "1",
-		 			"emote": "🧮",
+		 			"emote": "U+1F9EE",
 		 			"name": "maths"
 		 		},
 				{
 		 			"reactionID": "2",
-		 			"emote": "🌌",
+		 			"emote": "U+1F30C",
 		 			"name": "pc"
 		 		},
 				{
 		 			"reactionID": "3",
-		 			"emote": "🌱",
+		 			"emote": "U+1F331",
 		 			"name": "svt"
 		 		},
 				{
 		 			"reactionID": "4",
-		 			"emote": "💱",
+		 			"emote": "U+1F4B1",
 		 			"name": "ses"
 		 		},
 				{
 		 			"reactionID": "5",
-		 			"emote": "🌍",
+		 			"emote": "U+1F30D",
 		 			"name": "hggssp"
 		 		},
 				{
 		 			"reactionID": "6",
-		 			"emote": "📘",
+		 			"emote": "U+1F4D8",
 		 			"name": "llce"
 		 		},
 				{
 		 			"reactionID": "7",
-		 			"emote": "📗",
+		 			"emote": "U+1F4D7",
 		 			"name": "llca"
 		 		},
 				{
 		 			"reactionID": "8",
-		 			"emote": "💻",
+		 			"emote": "U+1F4BB",
 		 			"name": "nsi"
 		 		},
 				{
 		 			"reactionID": "9",
-		 			"emote": "🕺🏻",
+		 			"emote": "U+1F57A",
 		 			"name": "dance"
 		 		}
 		 	]
@@ -160,52 +160,52 @@
 		 },
 		{
 		 	"id": "6",
-		 	"text": "**Quelle est ta troisième spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻)```",
+		 	"text": "**Quelle est ta troisième spécialité ?** ```\n -mathématiques (U+1F9EE) \n -physique-chimie (U+1F30C) \n -sciences et vie de la Terre (U+1F331) \n -sciences économiques et sociales (U+1F4B1) \n -histoire géographie, géopolitique et sciences politiques (U+1F30D) \n -langues, littératures et cultures étrangères (U+1F4D8) \n -langues, littératures et cultures de l'antiquité (U+1F4D7) \n -numériques et sciences de l'informatique (U+1F4BB) \n -danse (U+1F57A)```",
 			"reponseType": "reaction",
 		 	"reactions": [
 		 		{
 		 			"reactionID": "1",
-		 			"emote": "🧮",
+		 			"emote": "U+1F9EE",
 		 			"name": "maths"
 		 		},
 				{
 		 			"reactionID": "2",
-		 			"emote": "🌌",
+		 			"emote": "U+1F30C",
 		 			"name": "pc"
 		 		},
 				{
 		 			"reactionID": "3",
-		 			"emote": "🌱",
+		 			"emote": "U+1F331",
 		 			"name": "svt"
 		 		},
 				{
 		 			"reactionID": "4",
-		 			"emote": "💱",
+		 			"emote": "U+1F4B1",
 		 			"name": "ses"
 		 		},
 				{
 		 			"reactionID": "5",
-		 			"emote": "🌍",
+		 			"emote": "U+1F30D",
 		 			"name": "hggssp"
 		 		},
 				{
 		 			"reactionID": "6",
-		 			"emote": "📘",
+		 			"emote": "U+1F4D8",
 		 			"name": "llce"
 		 		},
 				{
 		 			"reactionID": "7",
-		 			"emote": "📗",
+		 			"emote": "U+1F4D7",
 		 			"name": "llca"
 		 		},
 				{
 		 			"reactionID": "8",
-		 			"emote": "💻",
+		 			"emote": "U+1F4BB",
 		 			"name": "nsi"
 		 		},
 				{
 		 			"reactionID": "9",
-		 			"emote": "🕺🏻",
+		 			"emote": "U+1F57A",
 		 			"name": "dance"
 		 		}
 		 	]
