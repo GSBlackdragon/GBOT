@@ -79,7 +79,7 @@
 			<resource>
 				<directory>src/fr/blackdragon/gbot/form</directory>
 				<includes>
-					<include>**/**/**/**/form.json</include>
+					<include>**/*.json</include>
 				</includes>
 			</resource>
 		</resources>
