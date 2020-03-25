@@ -43,7 +43,11 @@ public class FormManager extends ListenerAdapter {
 		
 		if (event.getAuthor() == this.user) {
 			if (FormConfig.forms.get(this.formIndex).getType() == FormType.text) {
-				formMap.put(this.formIndex, event.getMessage().getContentDisplay());
+				if (this.formIndex == 3 || this.formIndex == 5 || this.formIndex == 7) {
+					formMap.put(this.formIndex, Character.toString(event.getMessage().getContentDisplay().charAt(event.getMessage().getContentDisplay().length() - 1)));
+				} else {
+					formMap.put(this.formIndex, event.getMessage().getContentDisplay());
+				}
 				this.formIndex++;
 				checkFinish();
 			}
