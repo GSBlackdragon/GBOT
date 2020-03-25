@@ -101,7 +101,7 @@
 		 },
 		{
 		 	"id": "3",
-		 	"text": "**Peux-tu m'écrire le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)**",
+		 	"text": "**Peux-tu m'écrire le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)\n `Par exemple: [1G SPE MATHS2] il faut envoyer juste le 2 qui suis MATHS`**",
 			"reponseType": "text",
 		 	"reactions": []
 		 },
@@ -164,7 +164,7 @@
 		 },
 		{
 		 	"id": "5",
-		 	"text": "**Peux-tu m'écrire le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)**",
+		 	"text": "**Peux-tu m'écrire le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)\n `Par exemple: [1G SPE MATHS2] il faut envoyer juste le 2 qui suis MATHS`**",
 			"reponseType": "text",
 		 	"reactions": []
 		 },
@@ -227,7 +227,7 @@
 		 },
 		{
 		 	"id": "7",
-		 	"text": "**Peux-tu m'écrire le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)**",
+		 	"text": "**Peux-tu m'écrire le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)\n `Par exemple: [1G SPE MATHS2] il faut envoyer juste le 2 qui suis MATHS`**",
 			"reponseType": "text",
 		 	"reactions": []
 		 },
