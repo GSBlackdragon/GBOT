@@ -77,6 +77,10 @@ public class FormManager extends ListenerAdapter {
 	public void checkFinish() {
 		if (this.formIndex == (FormConfig.forms.values().size() + 1)) {
 			Member member = Gbot.getJDA().getGuilds().get(0).getMember(this.user);
+			
+			member.getGuild().getTextChannelById("692004640807452672").sendMessage(formMap.toString()).queue(form -> {
+				form.getChannel().sendMessage("Member: " + member.getAsMention()).queue();
+			});
 
 			if (DataManager.validRegister(formMap.get(8), formMap.get(9), formMap.get(10), formMap.get(1),
 					formMap.get(2), formMap.get(3), formMap.get(4), formMap.get(5), formMap.get(6), formMap.get(7), member.getUser())) {
