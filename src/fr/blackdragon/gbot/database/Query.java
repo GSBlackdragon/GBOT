@@ -21,7 +21,7 @@ public class Query {
 			statement.setString(5, spe1);
 			statement.setString(6, spe2);
 			statement.setString(7, spe3);
-			statement.setLong(8, user.getIdLong());
+			statement.setString(8, user.getId());
 			
 			statement.executeUpdate();
 		} catch (Exception e) {
