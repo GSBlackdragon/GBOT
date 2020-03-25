@@ -44,7 +44,7 @@
 		 },
 		{
 		 	"id": "2",
-		 	"text": "**Quelle est ta première spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻)```",
+		 	"text": "**Quelle est ta première spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻) \n -humanité, littérature et philosphie (📜)```",
 			"reponseType": "reaction",
 		 	"reactions": [
 		 		{
@@ -91,6 +91,11 @@
 		 			"reactionID": "9",
 		 			"emote": "🕺🏻",
 		 			"name": "danse"
+		 		},
+		 		{
+		 			"reactionID": "10",
+		 			"emote": "📜",
+		 			"name": "hlp"
 		 		}
 		 	]
 		 },
@@ -102,7 +107,7 @@
 		 },
 		{
 		 	"id": "4",
-		 	"text": "**Quelle est ta deuxième spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻)```",
+		 	"text": "**Quelle est ta deuxième spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻) \n -humanité, littérature et philosphie (📜)```",
 			"reponseType": "reaction",
 		 	"reactions": [
 		 		{
@@ -149,6 +154,11 @@
 		 			"reactionID": "9",
 		 			"emote": "🕺🏻",
 		 			"name": "danse"
+		 		},
+		 		{
+		 			"reactionID": "10",
+		 			"emote": "📜",
+		 			"name": "hlp"
 		 		}
 		 	]
 		 },
@@ -160,7 +170,7 @@
 		 },
 		{
 		 	"id": "6",
-		 	"text": "**Quelle est ta troisième spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻)```",
+		 	"text": "**Quelle est ta troisième spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻) \n -humanité, littérature et philosphie (📜)```",
 			"reponseType": "reaction",
 		 	"reactions": [
 		 		{
@@ -207,6 +217,11 @@
 		 			"reactionID": "9",
 		 			"emote": "🕺🏻",
 		 			"name": "danse"
+		 		},
+		 		{
+		 			"reactionID": "10",
+		 			"emote": "📜",
+		 			"name": "hlp"
 		 		}
 		 	]
 		 },
