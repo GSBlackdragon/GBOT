@@ -1,6 +1,7 @@
 package fr.blackdragon.gbot.database;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 import fr.blackdragon.gbot.Gbot;
 import net.dv8tion.jda.api.entities.User;
@@ -27,6 +28,21 @@ public class Query {
 		} catch (Exception e) {
 		}
 
+	}
+	
+	public static ResultSet getUserIDwithBirth() {
+		String request = "SELECT `date`, `userID` FROM `users` WHERE 1 ";
+		
+		PreparedStatement statement;
+		
+		try {
+			statement = Gbot.getDatabase().getConnection().prepareStatement(request);
+			
+			return statement.executeQuery();
+		} catch (Exception e) {
+		}
+		
+		return null;
 	}
 
 }

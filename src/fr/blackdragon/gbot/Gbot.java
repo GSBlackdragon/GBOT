@@ -2,6 +2,7 @@ package fr.blackdragon.gbot;
 
 import javax.security.auth.login.LoginException;
 
+import fr.blackdragon.gbot.birthday.BirthManager;
 import fr.blackdragon.gbot.database.DatabaseManager;
 import fr.blackdragon.gbot.events.ReactionAddEvent;
 import fr.blackdragon.gbot.events.UserJoinEvent;
@@ -35,6 +36,7 @@ public class Gbot {
 		databaseManager.open();
 
 		new FormConfig();
+		new BirthManager();
 	}
 
 	public static JDA getJDA() {
