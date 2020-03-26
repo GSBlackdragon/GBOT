@@ -10,14 +10,14 @@ public class BirthTask extends TimerTask {
 	@Override
 	public void run() {
 		System.out.println("Birth task instance");
-		
+
 		if (11 <= Calendar.getInstance().get(Calendar.HOUR) && Calendar.getInstance().get(Calendar.HOUR) <= 14) {
 			BirthManager.birthdays.forEach((user, birth) -> {
 				Calendar dateOfBirth = Calendar.getInstance();
 				dateOfBirth.setTime(birth.getDate());
 
-				if (birth.getCalendar().get(Calendar.DAY_OF_MONTH) == Calendar.getInstance()
-						.get(Calendar.DAY_OF_MONTH)) {
+				if (birth.getCalendar().get(Calendar.DAY_OF_MONTH) == Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
+						&& birth.getCalendar().get(Calendar.MONTH) == Calendar.getInstance().get(Calendar.MONTH)) {
 					Gbot.getJDA().getTextChannelById("692004640807452672")
 							.sendMessage("Joyeux Anniversaire " + user.getAsMention() + " pour tes "
 									+ (Calendar.getInstance().get(Calendar.YEAR) - dateOfBirth.get(Calendar.YEAR))

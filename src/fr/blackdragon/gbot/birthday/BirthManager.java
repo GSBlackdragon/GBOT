@@ -42,7 +42,7 @@ public class BirthManager {
 			e.printStackTrace();
 		}
 		
-		timer.scheduleAtFixedRate(task, 0, 120000);
+		timer.scheduleAtFixedRate(task, 0, 7200000);
 	}
 
 }
