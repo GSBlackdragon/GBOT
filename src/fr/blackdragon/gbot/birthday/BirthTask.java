@@ -9,6 +9,8 @@ public class BirthTask extends TimerTask {
 
 	@Override
 	public void run() {
+		System.out.println("Birth task instance");
+		
 		if (11 <= Calendar.getInstance().get(Calendar.HOUR) && Calendar.getInstance().get(Calendar.HOUR) <= 14) {
 			BirthManager.birthdays.forEach((user, birth) -> {
 				Calendar dateOfBirth = Calendar.getInstance();
