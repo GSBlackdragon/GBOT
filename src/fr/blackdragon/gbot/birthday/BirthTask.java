@@ -18,10 +18,10 @@ public class BirthTask extends TimerTask {
 
 				if (birth.getCalendar().get(Calendar.DAY_OF_MONTH) == Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
 						&& birth.getCalendar().get(Calendar.MONTH) == Calendar.getInstance().get(Calendar.MONTH)) {
-					Gbot.getJDA().getTextChannelById("692004640807452672")
-							.sendMessage("Joyeux Anniversaire " + user.getAsMention() + " pour tes "
+					Gbot.getJDA().getTextChannelById("692440347166507008")
+							.sendMessage("**Joyeux Anniversaire " + user.getAsMention() + " pour tes "
 									+ (Calendar.getInstance().get(Calendar.YEAR) - dateOfBirth.get(Calendar.YEAR))
-									+ "ans !")
+									+ "ans !**")
 							.queue();
 				}
 			});
