@@ -5,6 +5,7 @@ import javax.security.auth.login.LoginException;
 import fr.blackdragon.gbot.birthday.BirthManager;
 import fr.blackdragon.gbot.commands.Commands;
 import fr.blackdragon.gbot.database.DatabaseManager;
+import fr.blackdragon.gbot.events.PrivateMessageEvent;
 import fr.blackdragon.gbot.events.ReactionAddEvent;
 import fr.blackdragon.gbot.events.UserJoinEvent;
 import fr.blackdragon.gbot.form.FormConfig;
@@ -25,6 +26,7 @@ public class Gbot {
 
 		jda.addEventListener(new UserJoinEvent());
 		jda.addEventListener(new ReactionAddEvent());
+		jda.addEventListener(new PrivateMessageEvent());
 		jda.addEventListener(new Commands());
 
 		try {
