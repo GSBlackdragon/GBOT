@@ -12,6 +12,10 @@ public class PrivateMessageEvent extends ListenerAdapter {
 		if (event.getAuthor().getMutualGuilds().isEmpty()) {
 			return;
 		}
+		
+		if (event.getAuthor().isBot()) {
+			return;
+		}
 
 		if (!event.getAuthor().getMutualGuilds().get(0).getMember(event.getAuthor()).getRoles()
 				.contains(event.getAuthor().getMutualGuilds().get(0).getRoleById("688075891796213943"))) {
@@ -22,6 +26,10 @@ public class PrivateMessageEvent extends ListenerAdapter {
 	@Override
 	public void onMessageReactionAdd(MessageReactionAddEvent event) {
 		if (event.getUser().getMutualGuilds().isEmpty()) {
+			return;
+		}
+		
+		if (event.getUser().isBot()) {
 			return;
 		}
 
