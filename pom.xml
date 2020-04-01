@@ -88,6 +88,12 @@
 					<include>**/*.json</include>
 				</includes>
 			</resource>
+			<resource>
+				<directory>src/fr/blackdragon/gbot/morpion</directory>
+				<includes>
+					<include>**/*.png</include>
+				</includes>
+			</resource>
 		</resources>
 	</build>
 	<dependencies>
