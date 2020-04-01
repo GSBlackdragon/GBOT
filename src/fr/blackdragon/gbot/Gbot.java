@@ -28,7 +28,7 @@ public class Gbot {
 
 	public static void main(String[] args) throws LoginException {
 		
-		File folder = new File(Gbot.getJarFolder() + "/tempImage/");
+		File folder = new File(Gbot.getJarFolder() + "/classes/tempImage");
 		folder.mkdir();
 
 		jda = new JDABuilder(AccountType.BOT).setToken(args[0]).setActivity(Activity.playing("Créer des anti-sèches"))
