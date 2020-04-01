@@ -1,6 +1,7 @@
 package fr.blackdragon.gbot.utils;
 
 import java.awt.Color;
+import java.time.Instant;
 import java.util.List;
 
 import net.dv8tion.jda.api.EmbedBuilder;
@@ -38,6 +39,34 @@ public class EmbedUtils {
 		eb.setDescription(description);
 		eb.setColor(color);
 		eb.setThumbnail(thumbnail);
+		
+		if (footer != null) {
+			eb.setFooter(footer);
+		}
+		
+		if (fields != null) {
+			for (EmbedField field : fields) {
+				if (field.isBlank()) {
+					eb.addBlankField(field.isInline());
+				} else {
+					eb.addField(field.getTitle(), field.getText(), field.isInline());
+				}
+			}
+		}
+		return eb;
+	}
+	
+	public static EmbedBuilder buildEmbed(String title, String description, Color color, String thumbnail, String footer, Boolean timestamp, List<EmbedField> fields) {
+		EmbedBuilder eb = new EmbedBuilder();
+		
+		eb.setTitle(title);
+		eb.setDescription(description);
+		eb.setColor(color);
+		eb.setThumbnail(thumbnail);
+		
+		if (timestamp) {
+			eb.setTimestamp(Instant.now());
+		}
 		
 		if (footer != null) {
 			eb.setFooter(footer);
