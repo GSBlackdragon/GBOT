@@ -12,6 +12,7 @@ import fr.blackdragon.gbot.form.FormConfig;
 import fr.blackdragon.gbot.morpion.ImageBuilder;
 import fr.blackdragon.gbot.morpion.MorpCommand;
 import fr.blackdragon.gbot.morpion.Morpion;
+import fr.blackdragon.gbot.morpion.leaderboard.LeaderboardManager;
 import net.dv8tion.jda.api.*;
 import net.dv8tion.jda.api.entities.Activity;
 
@@ -21,6 +22,7 @@ public class Gbot {
 	public static String prefix = "%";
 	private static String jarFolder = Gbot.class.getProtectionDomain().getCodeSource().getLocation().getPath().replace("GBOT.jar", "");
 	private static DatabaseManager databaseManager;
+	private static LeaderboardManager leaderboardManager;
 
 	public static void main(String[] args) throws LoginException {
 
@@ -42,6 +44,7 @@ public class Gbot {
 				+ "?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Europe/Paris",
 				args[2], args[3]);
 		databaseManager.open();
+		leaderboardManager = new LeaderboardManager("694952018296438875");
 
 		new FormConfig();
 		new BirthManager();
@@ -58,6 +61,10 @@ public class Gbot {
 
 	public static DatabaseManager getDatabase() {
 		return databaseManager;
+	}
+	
+	public static LeaderboardManager getLeaderboard() {
+		return leaderboardManager;
 	}
 
 }

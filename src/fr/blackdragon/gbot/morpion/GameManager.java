@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.Timer;
 
 import fr.blackdragon.gbot.Gbot;
+import fr.blackdragon.gbot.morpion.data.PointsManager;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.TextChannel;
 import net.dv8tion.jda.api.entities.User;
@@ -51,7 +52,12 @@ public class GameManager extends ListenerAdapter {
 				this.instance.getMorpMap().replace(1, this.waitUser);
 				new ControlWin(this.waitUser, this.instance.getMorpMap(), checkWin -> {
 					if (checkWin.isWin()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsWin(checkWin.getWinner(),
+								(this.instance.getUsers().indexOf(checkWin.getWinner()) == 1)
+										? this.instance.getUsers().get(0)
+										: this.instance.getUsers().get(1));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage("Très beau coup décisif de la part de "
 								+ checkWin.getWinner().getAsMention() + " qui remporte ce match !\nDommage "
@@ -61,7 +67,10 @@ public class GameManager extends ListenerAdapter {
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
 					} else if (checkWin.isNull()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
+								this.instance.getUsers().get(0));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage(
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
@@ -76,7 +85,12 @@ public class GameManager extends ListenerAdapter {
 				this.instance.getMorpMap().replace(2, this.waitUser);
 				new ControlWin(this.waitUser, this.instance.getMorpMap(), checkWin -> {
 					if (checkWin.isWin()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsWin(checkWin.getWinner(),
+								(this.instance.getUsers().indexOf(checkWin.getWinner()) == 1)
+										? this.instance.getUsers().get(0)
+										: this.instance.getUsers().get(1));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage("Très beau coup décisif de la part de "
 								+ checkWin.getWinner().getAsMention() + " qui remporte ce match !\nDommage "
@@ -86,7 +100,10 @@ public class GameManager extends ListenerAdapter {
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
 					} else if (checkWin.isNull()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
+								this.instance.getUsers().get(0));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage(
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
@@ -101,7 +118,12 @@ public class GameManager extends ListenerAdapter {
 				this.instance.getMorpMap().replace(3, this.waitUser);
 				new ControlWin(this.waitUser, this.instance.getMorpMap(), checkWin -> {
 					if (checkWin.isWin()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsWin(checkWin.getWinner(),
+								(this.instance.getUsers().indexOf(checkWin.getWinner()) == 1)
+										? this.instance.getUsers().get(0)
+										: this.instance.getUsers().get(1));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage("Très beau coup décisif de la part de "
 								+ checkWin.getWinner().getAsMention() + " qui remporte ce match !\nDommage "
@@ -111,7 +133,10 @@ public class GameManager extends ListenerAdapter {
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
 					} else if (checkWin.isNull()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
+								this.instance.getUsers().get(0));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage(
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
@@ -126,7 +151,12 @@ public class GameManager extends ListenerAdapter {
 				this.instance.getMorpMap().replace(4, this.waitUser);
 				new ControlWin(this.waitUser, this.instance.getMorpMap(), checkWin -> {
 					if (checkWin.isWin()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsWin(checkWin.getWinner(),
+								(this.instance.getUsers().indexOf(checkWin.getWinner()) == 1)
+										? this.instance.getUsers().get(0)
+										: this.instance.getUsers().get(1));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage("Très beau coup décisif de la part de "
 								+ checkWin.getWinner().getAsMention() + " qui remporte ce match !\nDommage "
@@ -136,7 +166,10 @@ public class GameManager extends ListenerAdapter {
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
 					} else if (checkWin.isNull()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
+								this.instance.getUsers().get(0));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage(
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
@@ -151,7 +184,12 @@ public class GameManager extends ListenerAdapter {
 				this.instance.getMorpMap().replace(5, this.waitUser);
 				new ControlWin(this.waitUser, this.instance.getMorpMap(), checkWin -> {
 					if (checkWin.isWin()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsWin(checkWin.getWinner(),
+								(this.instance.getUsers().indexOf(checkWin.getWinner()) == 1)
+										? this.instance.getUsers().get(0)
+										: this.instance.getUsers().get(1));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage("Très beau coup décisif de la part de "
 								+ checkWin.getWinner().getAsMention() + " qui remporte ce match !\nDommage "
@@ -161,7 +199,10 @@ public class GameManager extends ListenerAdapter {
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
 					} else if (checkWin.isNull()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
+								this.instance.getUsers().get(0));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage(
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
@@ -176,7 +217,12 @@ public class GameManager extends ListenerAdapter {
 				this.instance.getMorpMap().replace(6, this.waitUser);
 				new ControlWin(this.waitUser, this.instance.getMorpMap(), checkWin -> {
 					if (checkWin.isWin()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsWin(checkWin.getWinner(),
+								(this.instance.getUsers().indexOf(checkWin.getWinner()) == 1)
+										? this.instance.getUsers().get(0)
+										: this.instance.getUsers().get(1));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage("Très beau coup décisif de la part de "
 								+ checkWin.getWinner().getAsMention() + " qui remporte ce match !\nDommage "
@@ -186,7 +232,10 @@ public class GameManager extends ListenerAdapter {
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
 					} else if (checkWin.isNull()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
+								this.instance.getUsers().get(0));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage(
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
@@ -201,7 +250,12 @@ public class GameManager extends ListenerAdapter {
 				this.instance.getMorpMap().replace(7, this.waitUser);
 				new ControlWin(this.waitUser, this.instance.getMorpMap(), checkWin -> {
 					if (checkWin.isWin()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsWin(checkWin.getWinner(),
+								(this.instance.getUsers().indexOf(checkWin.getWinner()) == 1)
+										? this.instance.getUsers().get(0)
+										: this.instance.getUsers().get(1));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage("Très beau coup décisif de la part de "
 								+ checkWin.getWinner().getAsMention() + " qui remporte ce match !\nDommage "
@@ -211,7 +265,10 @@ public class GameManager extends ListenerAdapter {
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
 					} else if (checkWin.isNull()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
+								this.instance.getUsers().get(0));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage(
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
@@ -226,7 +283,12 @@ public class GameManager extends ListenerAdapter {
 				this.instance.getMorpMap().replace(8, this.waitUser);
 				new ControlWin(this.waitUser, this.instance.getMorpMap(), checkWin -> {
 					if (checkWin.isWin()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsWin(checkWin.getWinner(),
+								(this.instance.getUsers().indexOf(checkWin.getWinner()) == 1)
+										? this.instance.getUsers().get(0)
+										: this.instance.getUsers().get(1));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage("Très beau coup décisif de la part de "
 								+ checkWin.getWinner().getAsMention() + " qui remporte ce match !\nDommage "
@@ -236,7 +298,10 @@ public class GameManager extends ListenerAdapter {
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
 					} else if (checkWin.isNull()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
+								this.instance.getUsers().get(0));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage(
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
@@ -251,7 +316,12 @@ public class GameManager extends ListenerAdapter {
 				this.instance.getMorpMap().replace(9, this.waitUser);
 				new ControlWin(this.waitUser, this.instance.getMorpMap(), checkWin -> {
 					if (checkWin.isWin()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsWin(checkWin.getWinner(),
+								(this.instance.getUsers().indexOf(checkWin.getWinner()) == 1)
+										? this.instance.getUsers().get(0)
+										: this.instance.getUsers().get(1));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage("Très beau coup décisif de la part de "
 								+ checkWin.getWinner().getAsMention() + " qui remporte ce match !\nDommage "
@@ -261,7 +331,10 @@ public class GameManager extends ListenerAdapter {
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
 					} else if (checkWin.isNull()) {
-						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 15000);
+						nextImage();
+						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
+								this.instance.getUsers().get(0));
+						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
 						this.morpChannel.sendMessage(
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
@@ -334,14 +407,17 @@ public class GameManager extends ListenerAdapter {
 				});
 	}
 
+	private void nextImage() {
+		this.morpChannel.sendFile(ImageBuilder.makeImage(this.instance.getMorpMap(), this.instance.getUserForm()))
+				.queue();
+	}
+
 	private TextChannel generateChannel() {
-		int number = 0;
-
-		while (!Gbot.getJDA().getGuilds().get(0).getTextChannelsByName("morp" + number, true).isEmpty()) {
-			number++;
-		}
-
-		return Gbot.getJDA().getGuilds().get(0).getCategoryById("692793898623303826").createTextChannel("morp" + number)
+		return Gbot.getJDA().getGuilds().get(0).getCategoryById("692793898623303826")
+				.createTextChannel(Gbot.getJDA().getGuilds().get(0)
+						.getMemberById(this.instance.getUsers().get(0).getIdLong()).getNickname().split(" ")[0] + "-vs-"
+						+ Gbot.getJDA().getGuilds().get(0).getMemberById(this.instance.getUsers().get(1).getIdLong())
+								.getNickname().split(" ")[0])
 				.complete();
 	}
 
