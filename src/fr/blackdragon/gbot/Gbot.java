@@ -9,6 +9,9 @@ import fr.blackdragon.gbot.events.PrivateMessageEvent;
 import fr.blackdragon.gbot.events.ReactionAddEvent;
 import fr.blackdragon.gbot.events.UserJoinEvent;
 import fr.blackdragon.gbot.form.FormConfig;
+import fr.blackdragon.gbot.morpion.ImageBuilder;
+import fr.blackdragon.gbot.morpion.MorpCommand;
+import fr.blackdragon.gbot.morpion.Morpion;
 import net.dv8tion.jda.api.*;
 import net.dv8tion.jda.api.entities.Activity;
 
@@ -28,6 +31,7 @@ public class Gbot {
 		jda.addEventListener(new ReactionAddEvent());
 		jda.addEventListener(new PrivateMessageEvent());
 		jda.addEventListener(new Commands());
+		jda.addEventListener(new MorpCommand());
 
 		try {
 			jda.awaitReady();
@@ -41,6 +45,7 @@ public class Gbot {
 
 		new FormConfig();
 		new BirthManager();
+		new ImageBuilder();
 	}
 
 	public static JDA getJDA() {

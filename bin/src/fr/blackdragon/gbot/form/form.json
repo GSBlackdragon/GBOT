@@ -44,7 +44,7 @@
 		 },
 		{
 		 	"id": "2",
-		 	"text": "**Quelle est ta première spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻)```",
+		 	"text": "**Quelle est ta première spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻) \n -humanité, littérature et philosphie (📜)```",
 			"reponseType": "reaction",
 		 	"reactions": [
 		 		{
@@ -55,7 +55,7 @@
 				{
 		 			"reactionID": "2",
 		 			"emote": "🌌",
-		 			"name": "physique"
+		 			"name": "pc"
 		 		},
 				{
 		 			"reactionID": "3",
@@ -90,19 +90,24 @@
 				{
 		 			"reactionID": "9",
 		 			"emote": "🕺🏻",
-		 			"name": "dance"
+		 			"name": "danse"
+		 		},
+		 		{
+		 			"reactionID": "10",
+		 			"emote": "📜",
+		 			"name": "hlp"
 		 		}
 		 	]
 		 },
 		{
 		 	"id": "3",
-		 	"text": "**Peux-tu me donner le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)**",
+		 	"text": "**Peux-tu m'écrire le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)\n `Par exemple: [1G SPE MATHS2] il faut envoyer juste le 2 qui suis MATHS`**",
 			"reponseType": "text",
 		 	"reactions": []
 		 },
 		{
 		 	"id": "4",
-		 	"text": "**Quelle est ta deuxième spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻)```",
+		 	"text": "**Quelle est ta deuxième spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻) \n -humanité, littérature et philosphie (📜)```",
 			"reponseType": "reaction",
 		 	"reactions": [
 		 		{
@@ -113,7 +118,7 @@
 				{
 		 			"reactionID": "2",
 		 			"emote": "🌌",
-		 			"name": "physique"
+		 			"name": "pc"
 		 		},
 				{
 		 			"reactionID": "3",
@@ -148,19 +153,24 @@
 				{
 		 			"reactionID": "9",
 		 			"emote": "🕺🏻",
-		 			"name": "dance"
+		 			"name": "danse"
+		 		},
+		 		{
+		 			"reactionID": "10",
+		 			"emote": "📜",
+		 			"name": "hlp"
 		 		}
 		 	]
 		 },
 		{
 		 	"id": "5",
-		 	"text": "**Peux-tu me donner le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)**",
+		 	"text": "**Peux-tu m'écrire le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)\n `Par exemple: [1G SPE MATHS2] il faut envoyer juste le 2 qui suis MATHS`**",
 			"reponseType": "text",
 		 	"reactions": []
 		 },
 		{
 		 	"id": "6",
-		 	"text": "**Quelle est ta troisième spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻)```",
+		 	"text": "**Quelle est ta troisième spécialité ?** ```\n -mathématiques (🧮) \n -physique-chimie (🌌) \n -sciences et vie de la Terre (🌱) \n -sciences économiques et sociales (💱) \n -histoire géographie, géopolitique et sciences politiques (🌍) \n -langues, littératures et cultures étrangères (📘) \n -langues, littératures et cultures de l'antiquité (📗) \n -numériques et sciences de l'informatique (💻) \n -danse (🕺🏻) \n -humanité, littérature et philosphie (📜)```",
 			"reponseType": "reaction",
 		 	"reactions": [
 		 		{
@@ -171,7 +181,7 @@
 				{
 		 			"reactionID": "2",
 		 			"emote": "🌌",
-		 			"name": "physique"
+		 			"name": "pc"
 		 		},
 				{
 		 			"reactionID": "3",
@@ -206,31 +216,36 @@
 				{
 		 			"reactionID": "9",
 		 			"emote": "🕺🏻",
-		 			"name": "dance"
+		 			"name": "danse"
+		 		},
+		 		{
+		 			"reactionID": "10",
+		 			"emote": "📜",
+		 			"name": "hlp"
 		 		}
 		 	]
 		 },
 		{
 		 	"id": "7",
-		 	"text": "**Peux-tu me donner le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)**",
+		 	"text": "**Peux-tu m'écrire le numéro de ta classe de spécialité choisie ? \n (réfère-toi à ton emploi du temps sur Pronote)\n `Par exemple: [1G SPE MATHS2] il faut envoyer juste le 2 qui suis MATHS`**",
 			"reponseType": "text",
 		 	"reactions": []
 		 },
 		{
 		 	"id": "8",
-		 	"text": "**Peux-tu me donner ton prénom ?**",
+		 	"text": "**Peux-tu m'écrire ton prénom ?**",
 			"reponseType": "text",
 		 	"reactions": []
 		 },
 		{
 		 	"id": "9",
-		 	"text": "**Peux-tu me donner ton nom ?**",
+		 	"text": "**Peux-tu m'écrire ton nom ?**",
 			"reponseType": "text",
 		 	"reactions": []
 		 },
 		{
 		 	"id": "10",
-		 	"text": "**Peux-tu me donner ta date de naissance ? (jour/mois/année)**",
+		 	"text": "**Peux-tu m'écrire ta date de naissance ? (jour/mois/année)**",
 			"reponseType": "text",
 		 	"reactions": []
 		 }
