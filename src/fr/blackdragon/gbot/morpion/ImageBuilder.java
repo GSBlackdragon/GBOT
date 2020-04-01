@@ -53,7 +53,7 @@ public class ImageBuilder {
 		Graphics graphics;
 
 		BufferedImage background;
-		File output = randomTMPFile(Gbot.getJarFolder() + "/tempImage/", ".png");
+		File output = randomTMPFile(Gbot.getJarFolder() + "classes/tempImage/", ".png");
 
 		int x = 60;
 		int y = 60;
