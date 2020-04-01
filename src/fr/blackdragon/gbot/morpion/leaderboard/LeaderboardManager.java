@@ -23,7 +23,7 @@ public class LeaderboardManager {
 			}
 		});
 		
-		timer.schedule(new LeaderboardTask(), 5000, 120000);
+		timer.schedule(new LeaderboardTask(), 5000, 30000);
 	}
 	
 	public TextChannel getTextChannel() {
