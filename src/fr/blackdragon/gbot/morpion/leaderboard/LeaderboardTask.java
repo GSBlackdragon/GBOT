@@ -30,7 +30,7 @@ public class LeaderboardTask extends TimerTask {
 						Gbot.getJDA().getGuilds().get(0).getMemberById(set.getString("userID")).getNickname() + " #"
 								+ index,
 						"Matchs: " + set.getInt("matchs") + "\nRatio: "
-								+ ((set.getInt("loose") == 0) ? "x" : (set.getInt("win") / set.getInt("loose"))),
+								+ ((set.getInt("loose") == 0) ? "x" : ((float) set.getInt("win") / set.getInt("loose"))),
 						true);
 				fieldsMap.put(((set.getInt("loose") == 0) ? 0 : ((float) set.getInt("win") / set.getInt("loose"))),
 						field);
