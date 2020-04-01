@@ -1,5 +1,7 @@
 package fr.blackdragon.gbot;
 
+import java.io.File;
+
 import javax.security.auth.login.LoginException;
 
 import fr.blackdragon.gbot.birthday.BirthManager;
@@ -25,6 +27,9 @@ public class Gbot {
 	private static LeaderboardManager leaderboardManager;
 
 	public static void main(String[] args) throws LoginException {
+		
+		File folder = new File(Gbot.getJarFolder() + "/tempImage/");
+		folder.mkdir();
 
 		jda = new JDABuilder(AccountType.BOT).setToken(args[0]).setActivity(Activity.playing("Créer des anti-sèches"))
 				.build();
