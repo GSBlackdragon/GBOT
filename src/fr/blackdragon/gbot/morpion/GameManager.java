@@ -276,6 +276,7 @@ public class GameManager extends ListenerAdapter {
 										: this.instance.getUsers().get(1)).getAsMention()
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else if (checkWin.isNull()) {
 						nextImage();
 						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
