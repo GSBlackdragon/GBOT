@@ -66,6 +66,7 @@ public class GameManager extends ListenerAdapter {
 										: this.instance.getUsers().get(1)).getAsMention()
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else if (checkWin.isNull()) {
 						nextImage();
 						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
@@ -76,6 +77,7 @@ public class GameManager extends ListenerAdapter {
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
 								.queue();
 						this.instance.setMatchFinish(null);
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else {
 						nextMessage();
 					}
@@ -99,6 +101,7 @@ public class GameManager extends ListenerAdapter {
 										: this.instance.getUsers().get(1)).getAsMention()
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else if (checkWin.isNull()) {
 						nextImage();
 						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
@@ -109,6 +112,7 @@ public class GameManager extends ListenerAdapter {
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
 								.queue();
 						this.instance.setMatchFinish(null);
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else {
 						nextMessage();
 					}
@@ -132,6 +136,7 @@ public class GameManager extends ListenerAdapter {
 										: this.instance.getUsers().get(1)).getAsMention()
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else if (checkWin.isNull()) {
 						nextImage();
 						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
@@ -142,6 +147,7 @@ public class GameManager extends ListenerAdapter {
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
 								.queue();
 						this.instance.setMatchFinish(null);
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else {
 						nextMessage();
 					}
@@ -165,6 +171,7 @@ public class GameManager extends ListenerAdapter {
 										: this.instance.getUsers().get(1)).getAsMention()
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else if (checkWin.isNull()) {
 						nextImage();
 						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
@@ -175,6 +182,7 @@ public class GameManager extends ListenerAdapter {
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
 								.queue();
 						this.instance.setMatchFinish(null);
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else {
 						nextMessage();
 					}
@@ -198,6 +206,7 @@ public class GameManager extends ListenerAdapter {
 										: this.instance.getUsers().get(1)).getAsMention()
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else if (checkWin.isNull()) {
 						nextImage();
 						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
@@ -208,6 +217,7 @@ public class GameManager extends ListenerAdapter {
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
 								.queue();
 						this.instance.setMatchFinish(null);
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else {
 						nextMessage();
 					}
@@ -231,6 +241,7 @@ public class GameManager extends ListenerAdapter {
 										: this.instance.getUsers().get(1)).getAsMention()
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else if (checkWin.isNull()) {
 						nextImage();
 						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
@@ -241,6 +252,7 @@ public class GameManager extends ListenerAdapter {
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
 								.queue();
 						this.instance.setMatchFinish(null);
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else {
 						nextMessage();
 					}
@@ -270,10 +282,12 @@ public class GameManager extends ListenerAdapter {
 								this.instance.getUsers().get(0));
 						timer.schedule(new DeleteChannelTask(this.morpChannel, this.instance.getRole()), 60000);
 						Gbot.getJDA().removeEventListener(this);
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 						this.morpChannel.sendMessage(
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
 								.queue();
 						this.instance.setMatchFinish(null);
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else {
 						nextMessage();
 					}
@@ -297,6 +311,7 @@ public class GameManager extends ListenerAdapter {
 										: this.instance.getUsers().get(1)).getAsMention()
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else if (checkWin.isNull()) {
 						nextImage();
 						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
@@ -307,6 +322,7 @@ public class GameManager extends ListenerAdapter {
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
 								.queue();
 						this.instance.setMatchFinish(null);
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else {
 						nextMessage();
 					}
@@ -330,6 +346,7 @@ public class GameManager extends ListenerAdapter {
 										: this.instance.getUsers().get(1)).getAsMention()
 								+ ", peut-être pour une prochaine fois 🤷").queue();
 						this.instance.setMatchFinish(checkWin.getWinner());
+						Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else if (checkWin.isNull()) {
 						nextImage();
 						PointsManager.addUserPointsNul(this.instance.getUsers().get(1),
@@ -340,6 +357,7 @@ public class GameManager extends ListenerAdapter {
 								"De très bon athlètes français ce soir, mais malheureusement peut-être tout simplement trop fort 🤷\nCe match se fini donc sur un match nul, 0 - 0, balle au centre !")
 								.queue();
 						this.instance.setMatchFinish(null);
+					Morpion.playersInGame.removeAll(this.instance.getUsers());
 					} else {
 						nextMessage();
 					}
