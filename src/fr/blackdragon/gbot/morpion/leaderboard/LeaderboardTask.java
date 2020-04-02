@@ -23,36 +23,24 @@ public class LeaderboardTask extends TimerTask {
 
 		try {
 			int index = 0;
+			set.last();
 
-			while (set.next()) {
+			while (set.previous()) {
 				index++;
 				EmbedField field = new EmbedField(
 						Gbot.getJDA().getGuilds().get(0).getMemberById(set.getString("userID")).getNickname() + " #"
 								+ index,
-						"Matchs: " + set.getInt("matchs") + "\nRatio: "
-								+ ((set.getInt("loose") == 0) ? "x" : ((float) set.getInt("win") / set.getInt("loose"))),
-						true);
-				fieldsMap.put(((set.getInt("loose") == 0) ? 0 : ((float) set.getInt("win") / set.getInt("loose"))),
-						field);
+						"Matchs: " + set.getInt("matchs") + "\nRatio: " + set.getFloat("ratio"), true);
+				fields.add(field);
 			}
-
-			fields.addAll(fieldsMap.values());
-			System.out.println(reverse(fields));
 
 			Gbot.getLeaderboard().getMessage().editMessage(EmbedUtils.buildEmbed("Morpion | Leaderboard",
 					"Voici le tableau des champions ... ou peut-être des chanceux, mais bon là n'est pas le sujet ! "
 							+ "Si pour ce tournoi tu dois te fixer un objectif, c'est bien de terminer en haut de ce classement !",
-					Color.red, null, "Actualisé toute les 30sec", true, reverse(fields)).build()).queue();
+					Color.red, null, "Actualisé toute les 30sec", true, fields).build()).queue();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-	}
-
-	static List<EmbedField> reverse(List<EmbedField> liste) {
-		List<EmbedField> result = new ArrayList<EmbedField>();
-		for (int i = liste.size() - 1; i >= 0; i--)
-			result.add(liste.get(i));
-		return result;
 	}
 
 }
