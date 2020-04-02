@@ -43,6 +43,7 @@ public class GameManager extends ListenerAdapter {
 
 		if (waitUser != event.getUser()) {
 			event.getReaction().removeReaction().queue();
+			return;
 		}
 
 		if (event.getMessageIdLong() == this.lastMessage.getIdLong()) {

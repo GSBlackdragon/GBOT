@@ -37,12 +37,12 @@ public class LeaderboardTask extends TimerTask {
 			}
 
 			fields.addAll(fieldsMap.values());
-			fields = reverse(fields);
+			System.out.println(reverse(fields));
 
 			Gbot.getLeaderboard().getMessage().editMessage(EmbedUtils.buildEmbed("Morpion | Leaderboard",
 					"Voici le tableau des champions ... ou peut-être des chanceux, mais bon là n'est pas le sujet ! "
 							+ "Si pour ce tournoi tu dois te fixer un objectif, c'est bien de terminer en haut de ce classement !",
-					Color.red, null, "Actualisé toute les 30sec", true, fields).build()).queue();
+					Color.red, null, "Actualisé toute les 30sec", true, reverse(fields)).build()).queue();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
