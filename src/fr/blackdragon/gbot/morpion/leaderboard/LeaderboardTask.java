@@ -23,14 +23,14 @@ public class LeaderboardTask extends TimerTask {
 
 		try {
 			int index = 0;
-			set.last();
+			set.afterLast();
 
 			while (set.previous()) {
 				index++;
 				EmbedField field = new EmbedField(
 						Gbot.getJDA().getGuilds().get(0).getMemberById(set.getString("userID")).getNickname() + " #"
 								+ index,
-						"Matchs: " + set.getInt("matchs") + "\nRatio: " + set.getFloat("ratio"), true);
+						"Matchs: " + set.getInt("matchs") + "\nRatio: " + set.getFloat("ratio") + "%", true);
 				fields.add(field);
 			}
 

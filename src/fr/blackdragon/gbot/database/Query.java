@@ -172,7 +172,7 @@ public class Query {
 	}
 	
 	public static ResultSet getUserProfiles() {
-		String request = "SELECT * FROM `morpion` ORDER BY `ratio`";
+		String request = "SELECT * FROM `morpion` ORDER BY `ratio`,`matchs`";
 		
 		PreparedStatement statement;
 		ResultSet result = null;
